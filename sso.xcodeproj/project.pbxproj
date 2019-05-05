@@ -14,6 +14,10 @@
 		10484146227E789600859B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10484144227E789600859B50 /* LaunchScreen.storyboard */; };
 		10484151227E789600859B50 /* ssoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10484150227E789600859B50 /* ssoTests.swift */; };
 		1048415C227E789600859B50 /* ssoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048415B227E789600859B50 /* ssoUITests.swift */; };
+		1048416A227E79A600859B50 /* ic_chulasso.png in Resources */ = {isa = PBXBuildFile; fileRef = 10484169227E79A600859B50 /* ic_chulasso.png */; };
+		1048416C227E7B6A00859B50 /* ChulaSSOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048416B227E7B6A00859B50 /* ChulaSSOViewController.swift */; };
+		1048416F227E7D3D00859B50 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048416E227E7D3D00859B50 /* WebKit.framework */; };
+		10484175227ECE4800859B50 /* ChulaSSOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10484174227ECE4800859B50 /* ChulaSSOProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		10484157227E789600859B50 /* ssoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ssoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1048415B227E789600859B50 /* ssoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssoUITests.swift; sourceTree = "<group>"; };
 		1048415D227E789600859B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10484169227E79A600859B50 /* ic_chulasso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_chulasso.png; path = "../../../../../AndroidStudioProjects/ChulaSSO/app/src/main/res/mipmap-xxxhdpi/ic_chulasso.png"; sourceTree = "<group>"; };
+		1048416B227E7B6A00859B50 /* ChulaSSOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChulaSSOViewController.swift; sourceTree = "<group>"; };
+		1048416E227E7D3D00859B50 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		10484174227ECE4800859B50 /* ChulaSSOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChulaSSOProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1048416F227E7D3D00859B50 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 				1048414F227E789600859B50 /* ssoTests */,
 				1048415A227E789600859B50 /* ssoUITests */,
 				10484139227E789400859B50 /* Products */,
+				1048416D227E7D3D00859B50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +107,15 @@
 		1048413A227E789400859B50 /* sso */ = {
 			isa = PBXGroup;
 			children = (
+				10484169227E79A600859B50 /* ic_chulasso.png */,
 				1048413B227E789400859B50 /* AppDelegate.swift */,
 				1048413D227E789400859B50 /* ViewController.swift */,
+				1048416B227E7B6A00859B50 /* ChulaSSOViewController.swift */,
 				1048413F227E789400859B50 /* Main.storyboard */,
 				10484142227E789600859B50 /* Assets.xcassets */,
 				10484144227E789600859B50 /* LaunchScreen.storyboard */,
 				10484147227E789600859B50 /* Info.plist */,
+				10484174227ECE4800859B50 /* ChulaSSOProtocol.swift */,
 			);
 			path = sso;
 			sourceTree = "<group>";
@@ -123,6 +136,14 @@
 				1048415D227E789600859B50 /* Info.plist */,
 			);
 			path = ssoUITests;
+			sourceTree = "<group>";
+		};
+		1048416D227E7D3D00859B50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1048416E227E7D3D00859B50 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +253,7 @@
 				10484146227E789600859B50 /* LaunchScreen.storyboard in Resources */,
 				10484143227E789600859B50 /* Assets.xcassets in Resources */,
 				10484141227E789400859B50 /* Main.storyboard in Resources */,
+				1048416A227E79A600859B50 /* ic_chulasso.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1048413E227E789400859B50 /* ViewController.swift in Sources */,
+				10484175227ECE4800859B50 /* ChulaSSOProtocol.swift in Sources */,
 				1048413C227E789400859B50 /* AppDelegate.swift in Sources */,
+				1048416C227E7B6A00859B50 /* ChulaSSOViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
